@@ -1,0 +1,14 @@
+name: Opencode Model Badges
+repo: https://github.com/engrtarun/opencode-model-badges
+tagline: Live model picker badges — ● running, ↻ rate-limited, ✕ exhausted
+description: >-
+  Real-time status badges on every model in the picker: ● running with
+  cross-session counts (● [N]), ↻ rate-limited with retry countdown, and
+  ✕ limit exhausted until provider reset. Driven by session.status and
+  session.model.updated events, so switching models moves its badge
+  instantly. Pure event handling, zero child processes.
+scope: [global]
+tags: [plugin, model-picker, badges, sessions, rate-limit]
+installation: >-
+  Clone the repo and copy index.ts and lib.ts into
+  ~/.config/opencode/plugins/model-badges/ — badges appear on next picker open.
